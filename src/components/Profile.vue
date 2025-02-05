@@ -14,7 +14,6 @@ defineProps<{
     </div>
     <div class="profile-card-footer">
       <img src="@/assets/fb.webp"/>
-      <img src="@/assets/xtwitter.webp"/>
       <img src="@/assets/linkedIn.webp"/>
       <img src="@/assets/insta.webp"/>
     </div>

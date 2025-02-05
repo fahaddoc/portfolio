@@ -18,14 +18,14 @@ defineProps<{
       <div class="nav">
         <div class="li on">About Me</div>
         <div class="li">Resume</div>
-        <div class="li">Products</div>
+        <div class="li">Products / Projects</div>
         <div class="li">Contact</div>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style>
 
 .header{
   display: flex;
