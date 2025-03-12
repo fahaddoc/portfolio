@@ -20,7 +20,7 @@ section {
   place-items: center;
   line-height: 1.5;
   max-height: 100vh;
-  background-color: #efeaea !important;
+  background-color: #2c3e50 !important;
 }
 </style>
 

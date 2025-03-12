@@ -1,9 +1,10 @@
 <script setup lang="ts">
 
 defineProps<{
-  imageLeft: string,
-  imageRight: string,
-  description: string
+  imageLeft: string
+  imageRight: string
+  leftDescription: string
+  rightDescription: string
 }>();
 
 </script>
@@ -13,31 +14,20 @@ defineProps<{
     <div class="row">
       <div class="left-box">
         <div class="cont lft">
-          <img alt="" :src="imageLeft" height="300"/>
+          <img alt="" :src="imageLeft"/>
           <div class="para">
-            <p>Flutter app which run in various platforms, Flutter app which run in various platforms,
-              Flutter app which run in various platforms,Flutter app which run in various platforms,Flutter app which run
-              in various platforms,Flutter app which run in various
-              platforms.
-            </p>
+            <p>{{leftDescription}}</p>
           </div>
         </div>
       </div>
       <div class="right-box">
         <div class="cont rt">
-          <img alt="" :src="imageRight" height="300"/>
+          <img alt="" :src="imageRight"/>
           <div class="para">
-            <p>Flutter app which run in various platforms, Flutter app which run in various platforms,
-              Flutter app which run in various platforms,Flutter app which run in various platforms,Flutter app which run
-              in various platforms,Flutter app which run in various
-              platforms.
-            </p>
+            <p>{{rightDescription}}</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="description">
-      {{ description }}
     </div>
   </div>
 </template>
@@ -92,6 +82,7 @@ defineProps<{
 
 .cont > img{
   border-radius: 1rem;
+  height: 300px;
 }
 .cont > .para {
   display: flex;
